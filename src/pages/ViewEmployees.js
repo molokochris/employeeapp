@@ -1,7 +1,10 @@
 export default function ViewEmployees() {
     return (
-        <>
-            ViewEmployees
-        </>
+        <div className="">
+            <div className="view-header">
+                <b>22Bit Employees</b>
+                
+            </div>
+        </div>
     );
 }

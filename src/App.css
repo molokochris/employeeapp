@@ -81,6 +81,11 @@ main button {
 .add-employee img {
   width: 250px;
   height: auto;
+  /* border-radius: 50%; */
+  /* border: 1px dotted rgb(209,209,209); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .add-employee img:hover {
   cursor: pointer;
@@ -96,6 +101,12 @@ main button {
 
 button:hover {
   cursor: pointer;
+}
+
+.view-header {
+  width: 80%;
+  background-color: rgb(209,209,209);
+
 }
 
 footer {
