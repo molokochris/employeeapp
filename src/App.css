@@ -97,6 +97,7 @@ main button {
 }
 .input-form input {
   margin: 2% 50px;
+  width: 40%;
 }
 
 button:hover {
@@ -107,6 +108,10 @@ button:hover {
   width: 80%;
   background-color: rgb(209,209,209);
 
+}
+
+form button {
+  margin: 2%;
 }
 
 footer {
