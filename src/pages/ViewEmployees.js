@@ -36,25 +36,6 @@ export default function ViewEmployees() {
                             <th>ID</th>
                             <th>Employee Position</th>
                         </tr>
-                        {/* {parsedData.map((employee) => (<tr>
-                            <td>{employee.firstName}</td>
-                            <td>{employee.surname}</td>
-                            <td>{employee.contact}</td>
-                            <td>{employee.email}</td>
-                            <td>{employee.id}</td>
-                            <td>{employee.position}</td>
-                            <td>
-                                <button
-                                    style={{
-                                        backgroundColor: "tomato"
-                                    }}
-                                    onClick={() => {
-                                        handleDelete(employee.index)
-                                        console.log(parsedData)
-                                    }}
-                                >
-                                    Delete
-                                </button> */}
                         {employees.map((employee) => (<tr>
                             <td>{employee.firstName}</td>
                             <td>{employee.surname}</td>
