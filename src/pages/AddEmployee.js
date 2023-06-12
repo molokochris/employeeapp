@@ -1,4 +1,6 @@
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
+// import {useHistory} from 'react-router-dom';
 
 export default function AddEmployee() {
 
@@ -15,7 +17,7 @@ export default function AddEmployee() {
 
     const handleFileChange = (event) => {
             const selectedFile = event.target.files[0];
-            console.log(selectedFile)
+            // console.log(selectedFile)
 
             const fileReader = new FileReader();
 
@@ -85,6 +87,8 @@ export default function AddEmployee() {
             setImageSrc("./Prof-placeholder.png")
 
             setSubmitClick(!submitClicked);
+
+            // history.push('/view-employees');
         }
 
     return (
@@ -141,9 +145,7 @@ export default function AddEmployee() {
                     <button type="submit">add</button>
                     { submitClicked && (<>
                     <br />
-                    <button onClick={console.log("view then employees")}>
-                            view employees
-                    </button>
+                    <Link to="/view">View Employees</Link>
                     </>)}
                     
                 </form>

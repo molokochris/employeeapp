@@ -62,7 +62,7 @@ main a {
   border-radius: 5px; */
 }
 
-main button {
+main a {
   background-color: rgba(209, 209, 209, 1);
   padding: 5px;
   width: 100px;
