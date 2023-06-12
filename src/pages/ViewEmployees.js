@@ -11,8 +11,6 @@ export default function ViewEmployees() {
     const goBack = () => {
         navigate(-1);
     };
-
-    
     
     return (
         <div className="view">
@@ -36,6 +34,22 @@ export default function ViewEmployees() {
                             <td>{employee.email}</td>
                             <td>{employee.id}</td>
                             <td>{employee.position}</td>
+                            <td>
+                                <button
+                                    style={{
+                                        backgroundColor: "tomato"
+                                    }}
+                                    onClick={() => {
+
+                                        console.log([employee.index])
+                                        console.log(data[employee.index])
+                                        data.pop(employee.index)
+                                        console.log(data)
+                                    }}
+                                >
+                                    Delete
+                                </button>
+                            </td>
                         </tr>
                     
                 ))}

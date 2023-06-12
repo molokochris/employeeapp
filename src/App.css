@@ -115,7 +115,33 @@ form button {
 }
 
 .view {
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.view table {
+  /* margin: 5%; */
+  padding: 5% 0%;
+  width: 100%;
+}
+.view table th {
+  /* padding: 0% 2%; */
+  color: whitesmoke;
+  background-color: rgb(209,209,209);
+}
+
+.view table td {
+  /* margin:  2% 5%; */
+  padding: 2%;
+  width: 10%;
+}
+
+.view table td button {
+  text-align: center;
 }
 
 .view button {
