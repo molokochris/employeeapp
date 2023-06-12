@@ -11,6 +11,15 @@ export default function ViewEmployees() {
     const goBack = () => {
         navigate(-1);
     };
+
+    const handleDelete = (index) => {
+        const updatedEmployees = employees.filter(
+            (_, i) => i !== index);
+            setEmployees(updatedEmployees);
+    };
+
+    const storedData = localStorage.getItem("userData");
+    const parsedData = JSON.parse(storedData);
     
     return (
         <div className="view">
@@ -27,6 +36,25 @@ export default function ViewEmployees() {
                             <th>ID</th>
                             <th>Employee Position</th>
                         </tr>
+                        {/* {parsedData.map((employee) => (<tr>
+                            <td>{employee.firstName}</td>
+                            <td>{employee.surname}</td>
+                            <td>{employee.contact}</td>
+                            <td>{employee.email}</td>
+                            <td>{employee.id}</td>
+                            <td>{employee.position}</td>
+                            <td>
+                                <button
+                                    style={{
+                                        backgroundColor: "tomato"
+                                    }}
+                                    onClick={() => {
+                                        handleDelete(employee.index)
+                                        console.log(parsedData)
+                                    }}
+                                >
+                                    Delete
+                                </button> */}
                         {employees.map((employee) => (<tr>
                             <td>{employee.firstName}</td>
                             <td>{employee.surname}</td>
@@ -40,11 +68,8 @@ export default function ViewEmployees() {
                                         backgroundColor: "tomato"
                                     }}
                                     onClick={() => {
-
-                                        console.log([employee.index])
-                                        console.log(data[employee.index])
-                                        data.pop(employee.index)
-                                        console.log(data)
+                                        handleDelete(employee.index)
+                                        console.log(parsedData)
                                     }}
                                 >
                                     Delete
