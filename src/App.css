@@ -114,6 +114,18 @@ form button {
   margin: 2%;
 }
 
+.view {
+  display: flex;
+}
+
+.view button {
+  border-radius: 100%;
+  height: fit-content;
+  border: none;
+  color: whitesmoke;
+  background-color: black;
+}
+
 footer {
   width: 100%;
   background-color: aliceblue;
